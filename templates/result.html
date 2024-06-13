@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Alignment Result</h1>
+        <p><strong>Sequence 1:</strong> {{ alignment[0] }}</p>
+        <p><strong>Sequence 2:</strong> {{ alignment[1] }}</p>
+        <p><strong>Score:</strong> {{ alignment[2] }}</p>
+        <a href="/" class="btn btn-secondary">Back</a>
+    </div>
+</body>
+</html>
